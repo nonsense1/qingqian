@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--登录-->
+        <scene sceneID="dhm-B7-1t2">
+            <objects>
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vqp-UP-LJV" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sn3-im-lBH"/>
+                        <viewControllerLayoutGuide type="bottom" id="DCf-cs-OOs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ACJ-Jb-Zch">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="km5-9y-AeE">
+                                <rect key="frame" x="0.0" y="65" width="320" height="458"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-U4-hGh">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkg-MY-C9Q">
+                                                <rect key="frame" x="8" y="12" width="51" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sih-5O-ekF">
+                                                <rect key="frame" x="71" y="8" width="241" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfO-p4-Ak4">
+                                        <rect key="frame" x="0.0" y="52" width="320" height="43"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH3-pA-NzZ">
+                                                <rect key="frame" x="8" y="12" width="51" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jM-Lx-Kyj">
+                                                <rect key="frame" x="74" y="9" width="238" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ui-Vc-IbM">
+                                        <rect key="frame" x="59" y="124" width="203" height="38"/>
+                                        <color key="backgroundColor" red="0.050980392159999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="登录">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="login:" destination="Vqp-UP-LJV" eventType="touchUpInside" id="FKu-eo-tcm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va2-yZ-70j">
+                                        <rect key="frame" x="7" y="176" width="75" height="30"/>
+                                        <state key="normal" title="忘记密码？"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q6-NA-VF2">
+                                        <rect key="frame" x="262" y="176" width="42" height="30"/>
+                                        <state key="normal" title="注册"/>
+                                        <connections>
+                                            <segue destination="VhZ-nE-Hi3" kind="push" id="MyI-9S-DGN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="登录" id="X6q-po-eWY"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="login" destination="8Ui-Vc-IbM" id="JJM-rp-UAH"/>
+                        <outlet property="password" destination="6jM-Lx-Kyj" id="gwR-U2-DOk"/>
+                        <outlet property="teleLoginView" destination="km5-9y-AeE" id="zLu-5u-ZXl"/>
+                        <outlet property="zhang" destination="sih-5O-ekF" id="boe-l1-pAX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZe-Ek-h15" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="721"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="XNo-hh-mdm">
+            <objects>
+                <viewController id="VhZ-nE-Hi3" customClass="GetVerifyCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NPz-i6-3Z1"/>
+                        <viewControllerLayoutGuide type="bottom" id="fvd-nE-0xX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gVI-ei-NFi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    请输入您的手机号码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBn-Cz-2EU">
+                                <rect key="frame" x="0.0" y="121" width="320" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vDF-by-mSj">
+                                <rect key="frame" x="0.0" y="65" width="320" height="42"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progressBar1" translatesAutoresizingMaskIntoConstraints="NO" id="Dhx-Km-cMj">
+                                        <rect key="frame" x="-8" y="12" width="320" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ4-Or-nMe">
+                                <rect key="frame" x="64" y="182" width="193" height="36"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="获取验证码">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getVerifyCode:" destination="VhZ-nE-Hi3" eventType="touchUpInside" id="Q0d-5i-sVs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="OQQ-KT-799"/>
+                    <connections>
+                        <outlet property="getVerifyCodeBtn" destination="dJ4-Or-nMe" id="3kU-Ro-nd5"/>
+                        <outlet property="phonenumber" destination="HBn-Cz-2EU" id="dTq-Ay-GMg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4L-t4-Oze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="759"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="doh-Dy-A7N">
+            <objects>
+                <viewController storyboardIdentifier="second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IS0-hO-ozw" customClass="SumbitVerifyCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mjm-Vc-Zjm"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgt-u6-ABt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tmy-yM-3QL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    请输入短信中的验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOR-fF-CHc">
+                                <rect key="frame" x="0.0" y="121" width="320" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTR-hm-odv">
+                                <rect key="frame" x="0.0" y="65" width="320" height="42"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progressBar2" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-JQ-er8">
+                                        <rect key="frame" x="-8" y="12" width="320" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECz-PR-lwZ">
+                                <rect key="frame" x="64" y="182" width="193" height="36"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="提交验证码">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yanzhengBlick:" destination="IS0-hO-ozw" eventType="touchUpInside" id="jbI-6y-iJg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="VL4-Kl-p3o"/>
+                    <connections>
+                        <outlet property="yanzhengtext" destination="TOR-fF-CHc" id="NeS-9c-XEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPX-xu-V5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="752"/>
+        </scene>
+        <!--注册-->
+        <scene sceneID="i8a-Fj-OWX">
+            <objects>
+                <viewController storyboardIdentifier="third" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qP5-XD-EG4" customClass="SetPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OPq-du-dnX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Rj-ta-bPA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QbQ-fH-ZBg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    请输入密码（长度在6－32个字符之间）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNv-5h-nR4">
+                                <rect key="frame" x="0.0" y="121" width="320" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-qW-wzc">
+                                <rect key="frame" x="0.0" y="65" width="320" height="42"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="progressBar3" translatesAutoresizingMaskIntoConstraints="NO" id="VTo-0s-N8I">
+                                        <rect key="frame" x="0.0" y="12" width="320" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZp-01-kbj">
+                                <rect key="frame" x="64" y="223" width="193" height="36"/>
+                                <color key="backgroundColor" red="0.050980392159999999" green="0.74117647060000003" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="regisClick:" destination="qP5-XD-EG4" eventType="touchUpInside" id="qWF-J7-REk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    请再次输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKQ-mS-R47">
+                                <rect key="frame" x="0.0" y="167" width="320" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="注册" id="Y2H-f5-rHA"/>
+                    <connections>
+                        <outlet property="password1" destination="GNv-5h-nR4" id="NWa-lT-0Kk"/>
+                        <outlet property="password2" destination="MKQ-mS-R47" id="puQ-Gz-fRf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DK2-QF-ls4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="721"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="progressBar1" width="960" height="60"/>
+        <image name="progressBar2" width="960" height="60"/>
+        <image name="progressBar3" width="960" height="60"/>
+    </resources>
+</document>
